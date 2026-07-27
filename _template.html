@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{PREFIX}}assets/au-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0D0C0B">
+<link rel="icon" type="image/svg+xml" href="{{PREFIX}}assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{PREFIX}}css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="aurora" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="{{PREFIX}}index.html" aria-label="Aurentic AI home">
+      <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#EFEAE2" stroke-width="3" opacity=".5"/><path d="M32 12 L50 52 H42.5 L32 27 L21.5 52 H14 Z" fill="#EFEAE2"/><circle cx="32" cy="45" r="5" fill="#FF4A1C"/></svg>
+      <span>Aurentic<i>&nbsp;AI</i></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="{{PREFIX}}services.html">Services</a>
+      <a href="{{PREFIX}}use-cases.html">Use Cases</a>
+      <a href="{{PREFIX}}process.html">Process</a>
+      <a href="{{PREFIX}}about.html">About</a>
+      <a href="{{PREFIX}}insights.html">Insights</a>
+      <a class="btn btn--sm" href="{{PREFIX}}contact.html">Book a call <span class="arr">→</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{{BODY}}
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="{{PREFIX}}index.html" aria-label="Aurentic AI home">
+          <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#EFEAE2" stroke-width="3" opacity=".5"/><path d="M32 12 L50 52 H42.5 L32 27 L21.5 52 H14 Z" fill="#EFEAE2"/><circle cx="32" cy="45" r="5" fill="#FF4A1C"/></svg>
+          <span>Aurentic<i>&nbsp;AI</i></span>
+        </a>
+        <p>AI agents, intelligent automation, and AI-powered software — designed, built, and operated for startups and growing businesses. Authentic engineering. Agentic results.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="{{PREFIX}}about.html">About</a></li>
+          <li><a href="{{PREFIX}}process.html">Process</a></li>
+          <li><a href="{{PREFIX}}insights.html">Insights</a></li>
+          <li><a href="{{PREFIX}}contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="{{PREFIX}}services.html">Services</a></li>
+          <li><a href="{{PREFIX}}use-cases.html">Use cases</a></li>
+          <li><a href="{{PREFIX}}index.html#roi">ROI calculator</a></li>
+          <li><a href="{{PREFIX}}guide/index.html">Site guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="{{PREFIX}}privacy.html">Privacy policy</a></li>
+          <li><a href="{{PREFIX}}terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© <span id="year">2026</span> Aurentic AI · aurenticai.com</span>
+      <span>hello@aurenticai.com · Remote-first, worldwide</span>
+    </div>
+  </div>
+</footer>
+
+<script src="{{PREFIX}}js/main.js" defer></script>
+</body>
+</html>
