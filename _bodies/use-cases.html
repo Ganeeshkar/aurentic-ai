@@ -1,0 +1,207 @@
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Use cases</p>
+      <p class="klabel">The use-case explorer</p>
+      <h1>Find what AI agents can do for <span class="grad">your</span> business.</h1>
+      <p class="lede">Pick your industry, pick a function — the explorer shows the agentic AI use cases we build, with the outcome each one is engineered for. Twenty-plus starting points, all customisable to your exact workflow.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="explorer reveal" id="explorer">
+        <div class="filter-group" data-filter-ind>
+          <span>Industry</span>
+          <div class="filters">
+            <button data-v="all" aria-pressed="true">All industries</button>
+            <button data-v="bfsi" aria-pressed="false">Banking &amp; Finance</button>
+            <button data-v="insurance" aria-pressed="false">Insurance</button>
+            <button data-v="healthcare" aria-pressed="false">Healthcare</button>
+            <button data-v="manufacturing" aria-pressed="false">Manufacturing</button>
+            <button data-v="logistics" aria-pressed="false">Logistics</button>
+            <button data-v="retail" aria-pressed="false">Retail &amp; E-commerce</button>
+          </div>
+        </div>
+        <div class="filter-group" data-filter-fn>
+          <span>Business function</span>
+          <div class="filters">
+            <button data-v="all" aria-pressed="true">All functions</button>
+            <button data-v="finance" aria-pressed="false">Finance &amp; Accounting</button>
+            <button data-v="support" aria-pressed="false">Customer Support</button>
+            <button data-v="sales" aria-pressed="false">Sales &amp; Marketing</button>
+            <button data-v="hr" aria-pressed="false">Human Resources</button>
+            <button data-v="itops" aria-pressed="false">IT &amp; Operations</button>
+          </div>
+        </div>
+        <p class="uc-count" id="uc-count" aria-live="polite"></p>
+        <div class="uc-grid">
+
+          <article class="uc" data-ind="bfsi manufacturing logistics retail" data-fn="finance">
+            <h3>Invoice-to-pay agent</h3>
+            <p>Reads every incoming invoice, three-way matches it against POs and goods receipts, chases discrepancies with suppliers, and preps the payment run for one-click approval.</p>
+            <p class="uc-impact">▸ Target: 90%+ touchless invoice processing</p>
+            <div class="uc-meta"><span>Finance</span><span>Multi-industry</span></div>
+          </article>
+
+          <article class="uc" data-ind="bfsi" data-fn="finance itops">
+            <h3>Reconciliation agent</h3>
+            <p>Matches transactions across bank feeds, ledgers, and payment gateways nightly; surfaces only true exceptions with the evidence attached.</p>
+            <p class="uc-impact">▸ Target: days cut from every close cycle</p>
+            <div class="uc-meta"><span>Finance</span><span>Banking</span></div>
+          </article>
+
+          <article class="uc" data-ind="bfsi" data-fn="itops">
+            <h3>KYC document processing</h3>
+            <p>Extracts, validates, and cross-checks onboarding documents; flags mismatches for compliance review with every check logged for the auditor.</p>
+            <p class="uc-impact">▸ Target: onboarding in hours, not weeks</p>
+            <div class="uc-meta"><span>Operations</span><span>Banking</span></div>
+          </article>
+
+          <article class="uc" data-ind="bfsi" data-fn="finance">
+            <h3>Loan application pre-screening</h3>
+            <p>Assembles applicant files, verifies documents, computes ratios against policy, and hands underwriters a complete pre-read — never an auto-decision.</p>
+            <p class="uc-impact">▸ Target: 3× underwriter throughput</p>
+            <div class="uc-meta"><span>Finance</span><span>Banking</span></div>
+          </article>
+
+          <article class="uc" data-ind="insurance" data-fn="support itops">
+            <h3>Claims intake &amp; triage</h3>
+            <p>Reads claim bundles — forms, photos, reports — extracts the facts, checks coverage against the actual policy wording, and routes to the right adjuster with a one-page brief.</p>
+            <p class="uc-impact">▸ Target: intake-to-adjuster in minutes</p>
+            <div class="uc-meta"><span>Operations</span><span>Insurance</span></div>
+          </article>
+
+          <article class="uc" data-ind="insurance bfsi" data-fn="itops">
+            <h3>Fraud-flag review queue</h3>
+            <p>Pre-investigates flagged transactions and claims: gathers history, patterns, and context so human investigators start with a dossier instead of a ticket number.</p>
+            <p class="uc-impact">▸ Target: investigation prep time −70%</p>
+            <div class="uc-meta"><span>Operations</span><span>Insurance · Banking</span></div>
+          </article>
+
+          <article class="uc" data-ind="insurance" data-fn="sales">
+            <h3>Policy renewal outreach</h3>
+            <p>Tracks renewal dates, drafts personalised renewal summaries with any coverage-gap notes, and queues them for agent review before send.</p>
+            <p class="uc-impact">▸ Target: zero missed renewal windows</p>
+            <div class="uc-meta"><span>Sales</span><span>Insurance</span></div>
+          </article>
+
+          <article class="uc" data-ind="healthcare" data-fn="itops support">
+            <h3>Patient intake &amp; scheduling</h3>
+            <p>Collects intake forms, verifies insurance eligibility, books and reschedules appointments, and sends prep instructions — with PHI boundaries designed in from day one.</p>
+            <p class="uc-impact">▸ Target: no-shows −30%, front-desk hours −50%</p>
+            <div class="uc-meta"><span>Operations</span><span>Healthcare</span></div>
+          </article>
+
+          <article class="uc" data-ind="healthcare" data-fn="finance">
+            <h3>Prior-authorization paperwork</h3>
+            <p>Assembles prior-auth requests from clinical notes and payer requirements, tracks status, and escalates stalls — clinicians approve, agents do the paperwork.</p>
+            <p class="uc-impact">▸ Target: auth turnaround −60%</p>
+            <div class="uc-meta"><span>Finance</span><span>Healthcare</span></div>
+          </article>
+
+          <article class="uc" data-ind="manufacturing" data-fn="itops">
+            <h3>Maintenance knowledge engine</h3>
+            <p>Turns decades of manuals, service tickets, and engineering notes into a system that answers troubleshooting questions in seconds — with the source cited every time.</p>
+            <p class="uc-impact">▸ Target: 15+ hrs/engineer/month recovered</p>
+            <div class="uc-meta"><span>Operations</span><span>Manufacturing</span></div>
+          </article>
+
+          <article class="uc" data-ind="manufacturing" data-fn="itops">
+            <h3>Quality-incident triage</h3>
+            <p>Ingests defect reports and sensor anomalies, correlates against batch and supplier history, and routes prioritised incidents to the right engineer with context attached.</p>
+            <p class="uc-impact">▸ Target: root-cause time −40%</p>
+            <div class="uc-meta"><span>Operations</span><span>Manufacturing</span></div>
+          </article>
+
+          <article class="uc" data-ind="manufacturing logistics" data-fn="finance itops">
+            <h3>Supplier document automation</h3>
+            <p>Processes POs, ASNs, certificates, and customs paperwork across formats and languages; chases suppliers for what’s missing before it blocks the line.</p>
+            <p class="uc-impact">▸ Target: zero shipments delayed by paperwork</p>
+            <div class="uc-meta"><span>Operations</span><span>Manufacturing · Logistics</span></div>
+          </article>
+
+          <article class="uc" data-ind="logistics" data-fn="itops support">
+            <h3>Shipment exception handler</h3>
+            <p>Watches every shipment across carriers; when something slips, it re-books, re-routes, or escalates — and tells the customer before they ask.</p>
+            <p class="uc-impact">▸ Target: exceptions resolved before morning</p>
+            <div class="uc-meta"><span>Operations</span><span>Logistics</span></div>
+          </article>
+
+          <article class="uc" data-ind="logistics retail" data-fn="support">
+            <h3>WISMO deflection agent</h3>
+            <p>“Where is my order?” answered instantly, accurately, in your brand voice — across email, chat, and WhatsApp, in every time zone you sell to.</p>
+            <p class="uc-impact">▸ Target: 80% of WISMO tickets never reach a human</p>
+            <div class="uc-meta"><span>Support</span><span>Logistics · Retail</span></div>
+          </article>
+
+          <article class="uc" data-ind="retail" data-fn="support">
+            <h3>Overnight support desk</h3>
+            <p>An agent crew that clears the night queue: resolves the routine, drafts the tricky, gates refunds behind human approval, and briefs your team at 8 a.m.</p>
+            <p class="uc-impact">▸ Target: median response 9 hrs → 4 min</p>
+            <div class="uc-meta"><span>Support</span><span>Retail</span></div>
+          </article>
+
+          <article class="uc" data-ind="retail" data-fn="sales">
+            <h3>Catalogue content operations</h3>
+            <p>Generates and updates product titles, descriptions, and attributes at catalogue scale — brand-voice-locked, channel-formatted, human-reviewed by exception.</p>
+            <p class="uc-impact">▸ Target: new-SKU time-to-live −75%</p>
+            <div class="uc-meta"><span>Marketing</span><span>Retail</span></div>
+          </article>
+
+          <article class="uc" data-ind="retail" data-fn="finance">
+            <h3>Returns &amp; refunds screening</h3>
+            <p>Validates return requests against policy and history, auto-approves the clear cases, and routes edge cases with a recommendation — money always moves on a human click.</p>
+            <p class="uc-impact">▸ Target: refund cycle −80%, leakage down</p>
+            <div class="uc-meta"><span>Finance</span><span>Retail</span></div>
+          </article>
+
+          <article class="uc" data-ind="bfsi insurance healthcare manufacturing logistics retail" data-fn="sales">
+            <h3>Lead research &amp; enrichment</h3>
+            <p>Every inbound lead researched, scored against your ICP, and written up before your rep opens their laptop. CRM fields filled, outreach drafted, never auto-sent.</p>
+            <p class="uc-impact">▸ Target: 100% of leads researched by morning</p>
+            <div class="uc-meta"><span>Sales</span><span>Any industry</span></div>
+          </article>
+
+          <article class="uc" data-ind="bfsi insurance healthcare manufacturing logistics retail" data-fn="sales">
+            <h3>Proposal &amp; quote drafting</h3>
+            <p>Drafts proposals from your templates, past wins, and the prospect’s actual requirements — your team edits and approves instead of starting from blank pages.</p>
+            <p class="uc-impact">▸ Target: proposal turnaround −60%</p>
+            <div class="uc-meta"><span>Sales</span><span>Any industry</span></div>
+          </article>
+
+          <article class="uc" data-ind="bfsi insurance healthcare manufacturing logistics retail" data-fn="hr">
+            <h3>Candidate screening assistant</h3>
+            <p>Screens applications against your rubric, schedules interviews, and answers candidate questions — shortlists are recommendations; humans make every decision.</p>
+            <p class="uc-impact">▸ Target: time-to-shortlist −70%</p>
+            <div class="uc-meta"><span>HR</span><span>Any industry</span></div>
+          </article>
+
+          <article class="uc" data-ind="bfsi insurance healthcare manufacturing logistics retail" data-fn="hr">
+            <h3>Employee onboarding &amp; policy Q&amp;A</h3>
+            <p>Runs onboarding checklists across systems and answers policy questions from a cited knowledge base — new hires productive in days, HR out of the FAQ business.</p>
+            <p class="uc-impact">▸ Target: onboarding admin −80%</p>
+            <div class="uc-meta"><span>HR</span><span>Any industry</span></div>
+          </article>
+
+          <article class="uc" data-ind="bfsi insurance healthcare manufacturing logistics retail" data-fn="itops">
+            <h3>IT ticket triage &amp; resolution</h3>
+            <p>Classifies and resolves routine IT requests — access, resets, how-tos — and escalates real incidents with diagnostics already gathered.</p>
+            <p class="uc-impact">▸ Target: L1 ticket volume −60%</p>
+            <div class="uc-meta"><span>IT</span><span>Any industry</span></div>
+          </article>
+
+        </div>
+      </div>
+      <p class="section-intro reveal" style="margin-top:2rem">Don’t see your workflow? These are starting points, not a menu. <a href="contact.html" class="text-link">Tell us what eats your week <span class="arr">→</span></a></p>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <div class="container">
+      <h2 class="reveal">Found your use case? Let’s scope <span class="grad">it.</span></h2>
+      <p class="lede reveal">A free strategy call turns a card on this page into a plan with a price and a date.</p>
+      <div class="hero-actions reveal">
+        <a class="btn" href="contact.html">Book the free call <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
