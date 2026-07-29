@@ -2,7 +2,7 @@ import { RoiCalculator } from "@/features/roi-calculator/RoiCalculator";
 
 export function RoiSection() {
   return (
-    <section className="section" id="roi">
+    <section className="section section-glow section-glow--warm" id="roi">
       <div className="container">
         <div className="section-head reveal">
           <p className="klabel">04 / Do the math</p>

@@ -1,4 +1,5 @@
 import { IndustryPageTemplate, IndustryPageData } from "@/components/shared/IndustryPageTemplate";
+import { IllustrationManufacturing } from "@/components/shared/IndustryIllustrations";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -12,6 +13,7 @@ const DATA: IndustryPageData = {
   crumb: "Manufacturing",
   title: <>AI that turns decades of plant knowledge into an answer in <span className="grad">seconds.</span></>,
   lede: "Quality incidents, supplier paperwork, and troubleshooting knowledge all move at the speed of the person who happens to know where to look. We engineer AI systems that make that knowledge instantly available — and that never delay a line for a missing form.",
+  art: <IllustrationManufacturing />,
 
   challenges: [
     {

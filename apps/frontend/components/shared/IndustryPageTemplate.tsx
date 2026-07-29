@@ -12,6 +12,7 @@ export type IndustryPageData = {
   crumb: string;
   title: React.ReactNode;
   lede: string;
+  art?: React.ReactNode;
   challenges: Challenge[];
   solutionsIntro: string;
   solutions: ServiceItem[];
@@ -31,6 +32,7 @@ export function IndustryPageTemplate({ data }: { data: IndustryPageData }) {
     crumb,
     title,
     lede,
+    art,
     challenges,
     solutionsIntro,
     solutions,
@@ -47,7 +49,7 @@ export function IndustryPageTemplate({ data }: { data: IndustryPageData }) {
 
   return (
     <>
-      <PageHero crumb={crumb} label={`Industries / ${crumb}`} title={title} lede={lede} />
+      <PageHero crumb={crumb} label={`Industries / ${crumb}`} title={title} lede={lede} art={art} />
 
       {/* 01 CHALLENGES */}
       <section className="section" id="challenges">
@@ -71,7 +73,7 @@ export function IndustryPageTemplate({ data }: { data: IndustryPageData }) {
       </section>
 
       {/* 02 SOLUTIONS */}
-      <section className="section section--panel" id="solutions">
+      <section className="section section--panel section-glow section-glow--warm" id="solutions">
         <div className="container">
           <div className="section-head reveal">
             <p className="klabel">02 / AI solutions we provide</p>
@@ -112,7 +114,7 @@ export function IndustryPageTemplate({ data }: { data: IndustryPageData }) {
       </section>
 
       {/* 05 BENEFITS / ROI */}
-      <section className="section" id="roi">
+      <section className="section section-glow section-glow--cool" id="roi">
         <div className="container">
           <div className="section-head reveal">
             <p className="klabel">05 / Business benefits &amp; expected ROI</p>

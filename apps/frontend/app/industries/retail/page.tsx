@@ -1,4 +1,5 @@
 import { IndustryPageTemplate, IndustryPageData } from "@/components/shared/IndustryPageTemplate";
+import { IllustrationRetail } from "@/components/shared/IndustryIllustrations";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -12,6 +13,7 @@ const DATA: IndustryPageData = {
   crumb: "Retail & E-commerce",
   title: <>AI that keeps your storefront running while your team <span className="grad">sleeps.</span></>,
   lede: "Support tickets, catalogue updates, and returns don't stop at close of business, and neither do your customers. We engineer AI systems that keep pace with retail's around-the-clock volume, with refunds and account changes always routed to a human.",
+  art: <IllustrationRetail />,
 
   challenges: [
     {

@@ -1,4 +1,5 @@
 import { IndustryPageTemplate, IndustryPageData } from "@/components/shared/IndustryPageTemplate";
+import { IllustrationLogistics } from "@/components/shared/IndustryIllustrations";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -12,6 +13,7 @@ const DATA: IndustryPageData = {
   crumb: "Logistics",
   title: <>AI that catches a shipment exception before your customer <span className="grad">does.</span></>,
   lede: "A delayed shipment or a missing customs document is only a crisis if nobody notices until the customer calls. We engineer AI systems that watch every shipment and every document continuously, and act before it becomes a problem.",
+  art: <IllustrationLogistics />,
 
   challenges: [
     {

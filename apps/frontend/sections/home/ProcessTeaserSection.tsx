@@ -30,7 +30,7 @@ const STEPS = [
 
 export function ProcessTeaserSection() {
   return (
-    <section className="section section--panel">
+    <section className="section section--panel section-glow section-glow--warm">
       <div className="container">
         <div className="section-head reveal">
           <div className="head-row">

@@ -1,4 +1,5 @@
 import { IndustryPageTemplate, IndustryPageData } from "@/components/shared/IndustryPageTemplate";
+import { IllustrationBanking } from "@/components/shared/IndustryIllustrations";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -12,6 +13,7 @@ const DATA: IndustryPageData = {
   crumb: "Banking & Financial Services",
   title: <>AI built for the accuracy and audit standards banking <span className="grad">demands.</span></>,
   lede: "Reconciliation, onboarding, underwriting, and fraud review are high-volume, high-scrutiny workflows where a wrong answer is expensive and an unreviewable one is worse. We engineer AI systems for exactly that bar.",
+  art: <IllustrationBanking />,
 
   challenges: [
     {

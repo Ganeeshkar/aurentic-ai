@@ -1,4 +1,5 @@
 import { IndustryPageTemplate, IndustryPageData } from "@/components/shared/IndustryPageTemplate";
+import { IllustrationHealthcare } from "@/components/shared/IndustryIllustrations";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -12,6 +13,7 @@ const DATA: IndustryPageData = {
   crumb: "Healthcare",
   title: <>AI that handles the paperwork, so your clinicians can handle the <span className="grad">patient.</span></>,
   lede: "Intake, prior authorization, and eligibility verification consume clinical and front-desk time that should belong to patients. We engineer AI systems for that administrative load, with PHI boundaries designed in from day one — never for the clinical decision itself.",
+  art: <IllustrationHealthcare />,
 
   challenges: [
     {

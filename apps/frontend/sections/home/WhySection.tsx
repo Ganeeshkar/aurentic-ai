@@ -1,6 +1,6 @@
 export function WhySection() {
   return (
-    <section className="section">
+    <section className="section section-glow section-glow--cool">
       <div className="container split">
         <div className="split-media reveal">
           <svg viewBox="0 0 560 420" style={{ width: "100%", height: "auto", display: "block" }} aria-hidden="true">

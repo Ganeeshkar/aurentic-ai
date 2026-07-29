@@ -1,4 +1,5 @@
 import { IndustryPageTemplate, IndustryPageData } from "@/components/shared/IndustryPageTemplate";
+import { IllustrationInsurance } from "@/components/shared/IndustryIllustrations";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -12,6 +13,7 @@ const DATA: IndustryPageData = {
   crumb: "Insurance",
   title: <>AI that reads a claim as carefully as your best <span className="grad">adjuster.</span></>,
   lede: "Claims, underwriting, and renewal operations run on documents — forms, photos, reports, policy wording — and on the accuracy of matching them to each other. We engineer AI systems for exactly that matching problem.",
+  art: <IllustrationInsurance />,
 
   challenges: [
     {
