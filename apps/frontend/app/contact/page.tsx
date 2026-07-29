@@ -1,5 +1,6 @@
-import Link from "next/link";
+import { PageHero } from "@/components/shared/PageHero";
 import { ContactForm } from "@/features/contact-form/ContactForm";
+import { IllustrationContact } from "@/components/shared/IndustryIllustrations";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -12,22 +13,13 @@ export const metadata = pageMetadata({
 export default function ContactPage() {
   return (
     <>
-      <section className="page-hero">
-        <div className="container">
-          <p className="breadcrumb">
-            <Link href="/">Home</Link> / Contact
-          </p>
-          <p className="klabel">Contact</p>
-          <h1>
-            Start with your architecture, not a <span className="grad">form.</span>
-          </h1>
-          <p className="lede">
-            Tell us the system you need to build. An engineer replies directly — not a
-            salesperson, not a queue. If you need this under NDA before sharing detail, say so
-            below and we&rsquo;ll set it up.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        crumb="Contact"
+        label="Contact"
+        title={<>Start with your architecture, not a <span className="grad">form.</span></>}
+        lede="Tell us the system you need to build. An engineer replies directly — not a salesperson, not a queue. If you need this under NDA before sharing detail, say so below and we'll set it up."
+        art={<IllustrationContact />}
+      />
 
       <section className="section">
         <div className="container contact-grid">

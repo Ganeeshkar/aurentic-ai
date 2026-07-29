@@ -9,6 +9,7 @@ import {
   IconRetail,
   IconLogistics,
 } from "@/components/shared/IndustryIcons";
+import { IllustrationIndustries } from "@/components/shared/IndustryIllustrations";
 
 export const metadata = pageMetadata({
   title: "Industries — AI & Intelligent Automation by Sector — Foxtheta",
@@ -64,6 +65,7 @@ export default function IndustriesPage() {
         label="Industries"
         title={<>AI solutions engineered for how your <span className="grad">industry</span> actually runs.</>}
         lede="We don't sell one AI product and reshape your business around it. Each industry practice starts from the regulatory constraints, data realities, and operating rhythm of that sector — then applies the same disciplined engineering underneath."
+        art={<IllustrationIndustries />}
       />
 
       <section className="section">

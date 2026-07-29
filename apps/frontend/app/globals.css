@@ -282,6 +282,30 @@ h3{font-family:var(--body);font-weight:600;font-size:clamp(1.08rem,1.8vw,1.3rem)
 
 /* ---------- sections ---------- */
 .section{padding:clamp(5rem,11vh,8.5rem) 0;position:relative}
+
+/* ambient section artwork (SectionArt.tsx) */
+#watch{overflow:hidden}
+#watch>.container{position:relative;z-index:1}
+.watch-art{position:absolute;top:-3rem;right:-4rem;width:44rem;max-width:62vw;opacity:.9;pointer-events:none;z-index:0}
+.watch-art svg{width:100%;height:auto;display:block}
+
+#industries{overflow:hidden}
+#industries>.container{position:relative;z-index:1}
+.svc-art{position:absolute;left:-7rem;bottom:-9rem;width:30rem;max-width:52vw;opacity:.6;pointer-events:none;z-index:0}
+.svc-art svg{width:100%;height:auto;display:block}
+
+.principle-band .band-art{position:absolute;inset:0;width:100%;height:100%;opacity:.55;pointer-events:none;z-index:0}
+.principle-band .band-art svg{width:100%;height:100%;display:block}
+.principle-band .container{position:relative;z-index:1}
+
+.cta-final .cta-art{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64rem;max-width:130vw;opacity:.7;pointer-events:none;z-index:0}
+.cta-final .cta-art svg{width:100%;height:auto;display:block}
+.cta-final .container{position:relative;z-index:1}
+
+@media(max-width:900px){
+  .watch-art{width:32rem;opacity:.6}
+  .svc-art{display:none}
+}
 .section--panel{background:var(--bg-alt);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
 .section-head{margin-bottom:clamp(2.6rem,6vh,4rem);position:relative}
 .section-head h2{margin-top:1.2rem;max-width:17em}

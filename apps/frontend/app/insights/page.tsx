@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PageHero } from "@/components/shared/PageHero";
+import { IllustrationInsights } from "@/components/shared/IndustryIllustrations";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -16,6 +17,7 @@ export default function InsightsPage() {
         label="Insights"
         title={<>Thinking that <span className="grad">ships.</span></>}
         lede="Practical writing on AI agents, automation, and the engineering that makes them trustworthy — useful on a Tuesday, not just interesting on LinkedIn."
+        art={<IllustrationInsights />}
       />
 
       <section className="section">

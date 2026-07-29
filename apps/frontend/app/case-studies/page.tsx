@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PageHero } from "@/components/shared/PageHero";
+import { IllustrationCaseStudies } from "@/components/shared/IndustryIllustrations";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -53,6 +54,7 @@ export default function CaseStudiesPage() {
         label="Case studies"
         title={<>Systems in production, not pitches in a <span className="grad">deck.</span></>}
         lede="Anonymized where clients require it. Verifiable where they don't. Every case study below follows the same structure: the challenge, the architecture, the governance model, and the outcome we engineered toward."
+        art={<IllustrationCaseStudies />}
       />
 
       <section className="section">

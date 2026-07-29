@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PageHero } from "@/components/shared/PageHero";
+import { IllustrationPlatformInfra } from "@/components/shared/IndustryIllustrations";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -67,6 +68,7 @@ export default function PlatformPage() {
         label="Platform & Trust"
         title={<>The engineering under every system we <span className="grad">ship.</span></>}
         lede="Model-agnostic by design. Reviewed by your security team, not just ours. This is the architecture, governance, and operational discipline that makes autonomy something you can actually grant."
+        art={<IllustrationPlatformInfra />}
       />
 
       <section className="section" id="architecture">

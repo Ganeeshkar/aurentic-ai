@@ -7,6 +7,7 @@ import {
   IconRetail,
   IconLogistics,
 } from "@/components/shared/IndustryIcons";
+import { IsoLayersArt } from "@/components/shared/SectionArt";
 
 const INDUSTRIES = [
   {
@@ -50,6 +51,7 @@ const INDUSTRIES = [
 export function ServicesSection() {
   return (
     <section className="section" id="industries">
+      <div className="svc-art"><IsoLayersArt /></div>
       <div className="container">
         <div className="section-head reveal">
           <div className="head-row">

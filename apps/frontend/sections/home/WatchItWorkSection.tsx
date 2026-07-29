@@ -1,4 +1,5 @@
 import { AgentDemo } from "@/features/agent-demo/AgentDemo";
+import { NeuralMeshArt } from "@/components/shared/SectionArt";
 
 const CHIPS = [
   "Banking & Financial Services",
@@ -15,6 +16,7 @@ const CHIPS = [
 export function WatchItWorkSection() {
   return (
     <section className="section" id="watch">
+      <div className="watch-art"><NeuralMeshArt /></div>
       <div className="container">
         <div className="section-head reveal">
           <div className="head-row">

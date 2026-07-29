@@ -219,3 +219,237 @@ export function IllustrationLogistics() {
     </svg>
   );
 }
+
+/** Agents + RAG + knowledge-graph, combined — for the Technology page hero. */
+export function IllustrationAgentsPlatform() {
+  const id = "tech";
+  return (
+    <svg viewBox="0 0 480 480" aria-hidden="true">
+      {defs(id)}
+      {bg(id)}
+      {/* retrieval document, left */}
+      <rect x="110" y="190" width="90" height="118" rx="10" fill="#fff" stroke="#E4E6EB" strokeWidth="1.5" transform="rotate(-6 155 249)" />
+      <rect x="124" y="212" width="50" height="6" rx="3" fill="#E4E6EB" transform="rotate(-6 155 249)" />
+      <rect x="124" y="228" width="60" height="6" rx="3" fill="#E4E6EB" transform="rotate(-6 155 249)" />
+      <rect x="124" y="244" width="40" height="6" rx="3" fill="#E4E6EB" transform="rotate(-6 155 249)" />
+      {/* orchestration hub */}
+      <circle cx="255" cy="235" r="34" fill="#fff" stroke={`url(#warm-${id})`} strokeWidth="2" />
+      <circle cx="255" cy="235" r="17" fill={`url(#warm-${id})`} />
+      <g stroke="#D8DAE0" strokeWidth="1.2">
+        <line x1="255" y1="235" x2="330" y2="170" />
+        <line x1="255" y1="235" x2="350" y2="255" />
+        <line x1="255" y1="235" x2="320" y2="320" />
+        <line x1="255" y1="235" x2="180" y2="180" />
+      </g>
+      {/* agent nodes orbiting */}
+      {node(330, 170, 8, "#1B2559")}
+      {node(350, 255, 7, "#A9781F")}
+      {node(320, 320, 8, "#1B2559")}
+      {node(180, 180, 6, "#B23A1A")}
+      {/* analytics card, upper right */}
+      <rect x="300" y="120" width="86" height="60" rx="8" fill="#fff" stroke="#E4E6EB" strokeWidth="1.5" />
+      <path d="M312 162l14-20 12 10 20-24" stroke={`url(#cool-${id})`} strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+/** Layered architecture stack + shield + cloud — for the Platform & Trust page hero. */
+export function IllustrationPlatformInfra() {
+  const id = "infra";
+  return (
+    <svg viewBox="0 0 480 480" aria-hidden="true">
+      {defs(id)}
+      {bg(id)}
+      {/* five architecture layers, stacked with depth */}
+      <g>
+        <rect x="150" y="290" width="180" height="30" rx="8" fill="#E4E6EB" />
+        <rect x="158" y="258" width="164" height="30" rx="8" fill="#F0EEE9" />
+        <rect x="166" y="226" width="148" height="30" rx="8" fill="#fff" stroke="#E4E6EB" strokeWidth="1.5" />
+        <rect x="174" y="194" width="132" height="30" rx="8" fill={`url(#cool-${id})`} opacity="0.9" />
+        <rect x="182" y="162" width="116" height="30" rx="8" fill={`url(#warm-${id})`} />
+      </g>
+      {/* security shield, right */}
+      <path d="M355 175 385 188v34c0 26-13 44-30 50-17-6-30-24-30-50v-34Z" fill="#fff" stroke={`url(#warm-${id})`} strokeWidth="2" />
+      <path d="M340 210l10 10 18-20" stroke={`url(#warm-${id})`} strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      {/* cloud, left */}
+      <path d="M110 300a22 22 0 010-44 26 26 0 0150-10 20 20 0 0122 20 18 18 0 01-2 34z" fill="#fff" stroke="#E4E6EB" strokeWidth="1.5" />
+      {node(355, 320, 6, "#A9781F")}
+      {node(120, 200, 5, "#B23A1A")}
+      <path d="M355 314l-15-20" stroke="#D8DAE0" strokeWidth="1.2" />
+    </svg>
+  );
+}
+
+/** Article card + idea lightbulb + trend line — for the Insights page hero. */
+export function IllustrationInsights() {
+  const id = "insight";
+  return (
+    <svg viewBox="0 0 480 480" aria-hidden="true">
+      {defs(id)}
+      {bg(id)}
+      {/* article card */}
+      <rect x="140" y="150" width="170" height="200" rx="12" fill="#fff" stroke="#E4E6EB" strokeWidth="1.5" />
+      <rect x="162" y="180" width="90" height="10" rx="5" fill="#E4E6EB" />
+      <rect x="162" y="204" width="126" height="6" rx="3" fill="#E4E6EB" />
+      <rect x="162" y="220" width="126" height="6" rx="3" fill="#E4E6EB" />
+      <rect x="162" y="236" width="90" height="6" rx="3" fill="#E4E6EB" />
+      <path d="M162 268l30-28 22 18 34-38 40 30" stroke={`url(#warm-${id})`} strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      <rect x="162" y="312" width="126" height="6" rx="3" fill="#E4E6EB" />
+      <rect x="162" y="328" width="80" height="6" rx="3" fill="#E4E6EB" />
+      {/* idea lightbulb badge */}
+      <circle cx="335" cy="180" r="26" fill="#fff" stroke={`url(#warm-${id})`} strokeWidth="2" />
+      <path d="M335 166a14 14 0 00-6 26l1 6h10l1-6a14 14 0 00-6-26Z" fill="none" stroke={`url(#warm-${id})`} strokeWidth="2" strokeLinejoin="round" />
+      <path d="M330 200h10" stroke={`url(#warm-${id})`} strokeWidth="2" strokeLinecap="round" />
+      {node(110, 220, 6, "#1B2559")}
+      {node(360, 300, 6, "#A9781F")}
+      <path d="M132 230l25 15" stroke="#CBCED6" strokeWidth="1.2" />
+    </svg>
+  );
+}
+
+/** Two connecting message threads — conversation-first, for the Contact page hero. */
+export function IllustrationContact() {
+  const id = "contact";
+  return (
+    <svg viewBox="0 0 480 480" aria-hidden="true">
+      {defs(id)}
+      {bg(id)}
+      {/* incoming message */}
+      <path d="M120 190h130a14 14 0 0114 14v66a14 14 0 01-14 14H190l-24 22v-22h-46a14 14 0 01-14-14v-66a14 14 0 0114-14Z" fill="#fff" stroke="#E4E6EB" strokeWidth="1.5" />
+      <rect x="140" y="216" width="90" height="6" rx="3" fill="#E4E6EB" />
+      <rect x="140" y="232" width="70" height="6" rx="3" fill="#E4E6EB" />
+      {/* reply message, engineer's answer */}
+      <path d="M230 260h130a14 14 0 0114 14v56a14 14 0 01-14 14H300l-1 20-26-20h-43a14 14 0 01-14-14v-56a14 14 0 0114-14Z" fill={`url(#warm-${id})`} />
+      <rect x="252" y="284" width="90" height="6" rx="3" fill="rgba(255,255,255,.75)" />
+      <rect x="252" y="300" width="60" height="6" rx="3" fill="rgba(255,255,255,.6)" />
+      {node(120, 150, 6, "#1B2559")}
+      {node(370, 190, 6, "#A9781F")}
+      {node(340, 350, 5, "#B23A1A")}
+      <path d="M140 160l20 30" stroke="#CBCED6" strokeWidth="1.2" />
+    </svg>
+  );
+}
+
+/** Calipers measuring a signal against a baseline — engineering discipline, for the About page. */
+export function IllustrationAbout() {
+  const id = "about";
+  return (
+    <svg viewBox="0 0 480 480" aria-hidden="true">
+      {defs(id)}
+      {bg(id)}
+      {/* measurement frame */}
+      <rect x="130" y="160" width="220" height="170" rx="12" fill="#fff" stroke="#E4E6EB" strokeWidth="1.5" />
+      {/* baseline vs measured signal */}
+      <path d="M152 292h176" stroke="#E4E6EB" strokeWidth="1.5" strokeDasharray="4 6" />
+      <path
+        d="M152 286l30-8 24 12 26-40 28 22 24-46 26 18"
+        fill="none" stroke={`url(#warm-${id})`} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
+      />
+      {/* tick marks — the discipline of measurement */}
+      <g stroke="#CBCED6" strokeWidth="1.4">
+        <path d="M152 300v10M196 300v7M240 300v10M284 300v7M328 300v10" />
+      </g>
+      {/* theta mark — the brand's second half */}
+      <ellipse cx="240" cy="196" rx="14" ry="18" fill="none" stroke="#1B2559" strokeWidth="2.2" />
+      <path d="M228 196h24" stroke="#1B2559" strokeWidth="2.2" strokeLinecap="round" />
+      {node(112, 200, 6, "#1B2559")}
+      {node(372, 290, 6, "#A9781F")}
+      {node(360, 170, 5, "#B23A1A")}
+      <path d="M134 210l20 12" stroke="#CBCED6" strokeWidth="1.2" />
+    </svg>
+  );
+}
+
+/** Staged pipeline with a gate — proof before production, for the Process page. */
+export function IllustrationProcess() {
+  const id = "process";
+  return (
+    <svg viewBox="0 0 480 480" aria-hidden="true">
+      {defs(id)}
+      {bg(id)}
+      {/* pipeline rail */}
+      <path d="M110 240h260" stroke="#E4E6EB" strokeWidth="10" strokeLinecap="round" />
+      {/* completed portion */}
+      <path d="M110 240h150" stroke={`url(#warm-${id})`} strokeWidth="4" strokeLinecap="round" />
+      {/* stage markers */}
+      <circle cx="110" cy="240" r="14" fill="#fff" stroke={`url(#warm-${id})`} strokeWidth="2.5" />
+      <path d="M104 240l5 5 9-10" stroke={`url(#warm-${id})`} strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="185" cy="240" r="14" fill="#fff" stroke={`url(#warm-${id})`} strokeWidth="2.5" />
+      <path d="M179 240l5 5 9-10" stroke={`url(#warm-${id})`} strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      {/* the human gate — amber, paused */}
+      <circle cx="260" cy="240" r="20" fill="#fff" stroke="#A9781F" strokeWidth="2.5" />
+      <rect x="254" y="232" width="4" height="16" rx="2" fill="#A9781F" />
+      <rect x="262" y="232" width="4" height="16" rx="2" fill="#A9781F" />
+      {/* pending stages */}
+      <circle cx="335" cy="240" r="12" fill="#fff" stroke="#CBCED6" strokeWidth="2" />
+      {/* spec card above, fixed price */}
+      <rect x="150" y="130" width="120" height="66" rx="10" fill="#fff" stroke="#E4E6EB" strokeWidth="1.5" />
+      <rect x="166" y="150" width="56" height="7" rx="3.5" fill="#E4E6EB" />
+      <rect x="166" y="166" width="80" height="6" rx="3" fill="#E4E6EB" />
+      <path d="M260 214v-18" stroke="#CBCED6" strokeWidth="1.2" strokeDasharray="3 4" />
+      {node(370, 180, 6, "#1B2559")}
+      {node(120, 320, 5, "#B23A1A")}
+    </svg>
+  );
+}
+
+/** Shipped outcome card with verification seal — for the Case studies page. */
+export function IllustrationCaseStudies() {
+  const id = "cases";
+  return (
+    <svg viewBox="0 0 480 480" aria-hidden="true">
+      {defs(id)}
+      {bg(id)}
+      {/* stacked result cards, depth */}
+      <rect x="164" y="200" width="180" height="130" rx="12" fill="#F0EEE9" transform="rotate(6 254 265)" />
+      <rect x="140" y="170" width="200" height="140" rx="12" fill="#fff" stroke="#E4E6EB" strokeWidth="1.5" />
+      {/* outcome metric */}
+      <rect x="164" y="194" width="70" height="9" rx="4.5" fill="#E4E6EB" />
+      <path d="M164 268l30-26 24 18 30-38 26 22" fill="none" stroke={`url(#warm-${id})`} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      <rect x="164" y="288" width="110" height="6" rx="3" fill="#E4E6EB" />
+      {/* verification seal */}
+      <circle cx="336" cy="180" r="26" fill="#fff" stroke={`url(#warm-${id})`} strokeWidth="2.4" />
+      <path d="M325 180l7 7 15-16" stroke={`url(#warm-${id})`} strokeWidth="2.6" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      {/* in-production indicator */}
+      <circle cx="176" cy="330" r="5" fill="#1B2559" />
+      <rect x="190" y="325" width="60" height="9" rx="4.5" fill="#E4E6EB" />
+      {node(110, 230, 6, "#A9781F")}
+      {node(372, 300, 5, "#B23A1A")}
+    </svg>
+  );
+}
+
+/** Six sector facets around a shared engineering core — for the Industries index page. */
+export function IllustrationIndustries() {
+  const id = "inds";
+  const facets: [number, number, string][] = [
+    [240, 148, "#1B2559"],
+    [318, 194, "#A9781F"],
+    [318, 286, "#B23A1A"],
+    [240, 332, "#1B2559"],
+    [162, 286, "#A9781F"],
+    [162, 194, "#B23A1A"],
+  ];
+  return (
+    <svg viewBox="0 0 480 480" aria-hidden="true">
+      {defs(id)}
+      {bg(id)}
+      {/* spokes from the shared core */}
+      <g stroke="#D8DAE0" strokeWidth="1.2">
+        {facets.map(([x, y], i) => (
+          <line key={i} x1="240" y1="240" x2={x} y2={y} />
+        ))}
+      </g>
+      {/* six sector tiles */}
+      {facets.map(([x, y, color], i) => (
+        <g key={i}>
+          <rect x={x - 22} y={y - 18} width="44" height="36" rx="9" fill="#fff" stroke="#E4E6EB" strokeWidth="1.5" />
+          <circle cx={x} cy={y} r="6" fill={color} />
+        </g>
+      ))}
+      {/* shared engineering core */}
+      <circle cx="240" cy="240" r="34" fill="#fff" stroke={`url(#warm-${id})`} strokeWidth="2.4" />
+      <circle cx="240" cy="240" r="16" fill={`url(#warm-${id})`} />
+    </svg>
+  );
+}

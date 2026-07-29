@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { PageHero } from "@/components/shared/PageHero";
 import { ServiceGrid, ServiceItem } from "@/components/shared/ServiceGrid";
+import { IllustrationAgentsPlatform } from "@/components/shared/IndustryIllustrations";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -98,6 +99,7 @@ export default function TechnologyPage() {
         label="Technology"
         title={<>The engineering underneath every industry <span className="grad">solution.</span></>}
         lede="Every industry practice draws on the same six disciplines. Model-agnostic, permission-scoped, and logged end to end — this is what our engineers actually build, not a slide of buzzwords."
+        art={<IllustrationAgentsPlatform />}
       />
 
       <section className="section" id="disciplines">

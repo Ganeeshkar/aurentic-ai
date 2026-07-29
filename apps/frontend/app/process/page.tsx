@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PageHero } from "@/components/shared/PageHero";
+import { IllustrationProcess } from "@/components/shared/IndustryIllustrations";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -60,6 +61,7 @@ export default function ProcessPage() {
         label="Process"
         title={<>A process built for people who’ve been burned by <span className="grad">agencies.</span></>}
         lede="Fixed prices agreed before work starts. Demos every week. Proof before production. And a written list of the things we won’t do. Here’s the whole playbook."
+        art={<IllustrationProcess />}
       />
 
       <section className="section">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PageHero } from "@/components/shared/PageHero";
+import { IllustrationAbout } from "@/components/shared/IndustryIllustrations";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
@@ -33,6 +34,7 @@ export default function AboutPage() {
             keys. That belief is the whole company.
           </>
         }
+        art={<IllustrationAbout />}
       />
 
       <section className="section">

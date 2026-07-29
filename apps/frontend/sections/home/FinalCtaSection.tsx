@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { DataPulseArt } from "@/components/shared/SectionArt";
 
 export function FinalCtaSection() {
   return (
     <section className="cta-final">
+      <div className="cta-art"><DataPulseArt /></div>
       <div className="container">
         <p className="klabel klabel--bare reveal">Ready when you are</p>
         <h2 className="reveal">

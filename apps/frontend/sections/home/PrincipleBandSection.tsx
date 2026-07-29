@@ -1,6 +1,9 @@
+import { OrbitFlowArt } from "@/components/shared/SectionArt";
+
 export function PrincipleBandSection() {
   return (
     <section className="principle-band section--panel">
+      <div className="band-art"><OrbitFlowArt /></div>
       <div className="container">
         <p className="klabel klabel--bare reveal">The Foxtheta principle</p>
         <blockquote className="reveal">
